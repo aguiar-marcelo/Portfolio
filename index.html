@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;800&family=M+PLUS+1+Code:wght@200;300;400&family=Roboto:wght@100&family=Source+Code+Pro:wght@300;400;500&display=swap"
-        rel="stylesheet">]
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
@@ -44,8 +44,8 @@
     <div class="s-inicio">
     </div>
     <div class="s-conteudo">
-        <div class="inicio-txt">
-            <div class="inicio-titulo">Marcelo Aguiar</div>
+        <div class="inicio-txt" data-anime="top">
+            <div class="inicio-titulo" >Marcelo Aguiar</div>
             <div class="inicio-subtitulo">
                 <span id="sobre">
                     < </span>desenvolvedor FullStack /<span>></span>
@@ -62,19 +62,19 @@
 
     </div>
     <div class="s-sobre">
-        <div class="sobre-img">
+        <div class="sobre-img" data-anime="left">
             <div class="elipse">
-                <img id="teste" class="img-perfil" src="img/perfil-elipse.jpg" alt="perfil-imagem">
+                <img id="teste" class="img-perfil" src="img/perfil-elipse.jpg">
             </div>
         </div>
-        <div class="sobre-texto">
+        <div class="sobre-texto" data-anime="right">
             <div class="s-titulo">
                 <div class="ponto-titulo-sobre"></div>
                 O que me motiva
             </div>
             <p> Sempre gostei de tecnologia e como ela pode facilitar nossa vida, por isso decidi estudar mais sobre o
                 assunto e ingressar nessa carreira. <br>
-                Curto a liberdade de ter uma idéia e poder botar em prática, criar e fazer funcionar, que a programação
+                Curto a liberdade de ter uma ideia e poder botar em prática, criar e fazer funcionar, que a programação
                 nos dá.</p>
 
             <div class="s-titulo">
@@ -92,8 +92,8 @@
         </div>
 
     </div>
-    <div class="s-projetos">
-        <div class="projetos-titulo">
+    <div class="s-projetos" data-anime="bottom">
+        <div class="projetos-titulo" >
             <div>Projetos</div>
         </div>
 
@@ -113,11 +113,10 @@
             <div id="rightItem" class="item-geral"></div>
         </div>
 
-        <div class="tecnologias-titulo" id="teste">
+        <div class="tecnologias-titulo" >
             Tecnologias Utilizadas
-            <div id="contato"></div>
         </div>
-        <div class="tecnologias" id="tecnologias">
+        <div class="tecnologias" id="tecnologias" >
             <!--<img src="https://media.bitdegree.org/storage/media/images/2018/12/node-js-interview-questions-logo-2-266x300.png"
                 alt="">
             <img src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="">
@@ -129,8 +128,8 @@
            -->
         </div>
     </div>
-    <div class="s-contatos">
-        <div class="contatos-redes">
+    <div class="s-contatos" >
+        <div class="contatos-redes" data-anime="left">
             <div class="redes-item">
                 <a href="https://api.whatsapp.com/send?phone=5513981651345&text=Oi%2C%20vim%20pelo%20seu%20portf%C3%B3lio!"
                     target="_blank">
@@ -151,7 +150,7 @@
                     Me siga no Github</a>
             </div>
         </div>
-        <div class="contatos-form">
+        <div class="contatos-form" data-anime="right">
 
             <div class="contato-form-titulo">
                 <div class="ponto-titulo-contato"></div>
@@ -167,13 +166,13 @@
         </div>
 
     </div>
-    <div class="s-carreira">
-        <div class="carreira-left">
-            <div class="formacao">
+    <div class="s-carreira" data-anime="bottom">
+        <div class="carreira-left" >
+            <div class="formacao" >
                 <h1 class="carreira-titulo">Formação Acadêmica</h1>
                 <div class="formacao-item">
                     <img src="img/unisanta.jpg" id="unisanta" alt="">
-                    <div>
+                    <div >
                         <div class="formacao-item-titulo">Universidade Santa Cecília</div>
                         <div class="formacao-item-curso">Sistemas de Informação</div>
                         <div class="formacao-item-periodo">cursando (até 12/2025)</div>
@@ -236,8 +235,8 @@
             </div>
         </div>
     </div>
-    <div class="s-footer">
-        <div class="footer-legenda">
+    <div class="s-footer" >
+        <div class="footer-legenda" >
             Você pode encontrar esse portfólio
             no meu <a href="">Github</a>. Marcelo Aguiar - 2022
         </div>
@@ -249,6 +248,7 @@
 
     <script src="script/carousel.js"></script>
     <script src="script/email.js"></script>
+    <script src="script/scroll-animation.js"></script>
 </body>
 
 </html>

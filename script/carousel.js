@@ -4,7 +4,8 @@ let Projetos = [
     imagem: "./img/itachi.jpg",
     link: "https://naruto.fandom.com/pt-br/wiki/Itachi_Uchiha",
     titulo: "Caixa Eletronico",
-    texto: "Aplicaçao Desktop que simula uma caixa eletronico, Verifique qual seu saldo em conta e realize saques fictício, tambem permite optar por notas de valor baixo ou alto."
+    texto: "Aplicaçao Desktop que simula um caixa eletrônico, Verifique qual seu saldo em conta e realize saques fictício, tambem permite optar por notas de valor baixo ou alto.",
+    tec: ["./img/tec/csharp.png"]
   },
 
   {
@@ -13,33 +14,34 @@ let Projetos = [
     link: "https://naruto.fandom.com/pt-br/wiki/Naruto_Uzumaki",
     titulo: "Library",
     texto: "Site fictício de venda de Livros, permite Visualizar os Livros à venda, sinopse, autor e sua Biografia, adicione os Livros de sua preferência para o carrinho de compras.",
-    tec: ["./img/tec/react.png","./img/tec/node.png","./img/tec/mysql.png","./img/tec/js.png", "./img/tec/html.png", "./img/tec/css.png"]
+    tec: ["./img/tec/react.png","./img/tec/node.png","./img/tec/mysql.png", "./img/tec/html.png", "./img/tec/css.png"]
 
   },
-
   {
     previa: "./img/kakashi.gif",
     imagem: "./img/kakashi.jpg",
-    link: "https://naruto.fandom.com/pt-br/wiki/Kakashi_Hatake",
+    link: "https://github.com/aguiar-marcelo/CRUD-conteiners",
     titulo: "Sistema de Containers",
-    texto: `Sistema Crud (Create, Read, Update e Delete) de containers, realiza as quatro principais operações utilizadas em bases de dados. <br> Permite adicionar, alterar ou deletar um container e visualizar em tempo real os containers existentes e suas características.<br> sistema Dividido em:<br>Servidor: que roda uma Api conectada ao Banco de Dados <br> Cliente: Aplicação web que realiza requisições ao servidor por meio da Api.`,
-    tec: ["./img/tec/react.png","./img/tec/node.png","./img/tec/mysql.png","./img/tec/js.png", "./img/tec/html.png", "./img/tec/css.png"]
+    texto: "Sistema Crud (Create, Read, Update e Delete) de containers, realiza as quatro principais operações utilizadas em bases de dados. <br> Permite adicionar, alterar ou deletar um container e visualizar em tempo real os containers existentes e suas características.<br> sistema Dividido em:<br><br><b>Servidor:</b> que roda uma Api conectada ao Banco de Dados.<br><b>Cliente:</b> Aplicação web que realiza requisições ao servidor por meio da Api.",
+    tec: ["./img/tec/react.png","./img/tec/node.png","./img/tec/mysql.png", "./img/tec/html.png", "./img/tec/css.png"]
   },
   {
     previa: "./img/lee.gif",
     imagem: "./img/lee.png",
-    link: "https://naruto.fandom.com/pt-br/wiki/Rock_Lee",
+    link: "https://github.com/aguiar-marcelo/Gerador_de_Etiquetas",
     titulo: "Gerador de Etiquetas",
-    texto: "Web app que desenvolvi para Empresa ao qual faço estágio, mensalmente a empresa fornece cestas basicas aos seus colaboradores, cada cesta é etiquetada com informações do respectivo colaborador, percebi que o RH criava o arquivo de impressão manualmente pelo Microsoft Word, então automatizei o processo criando um Site que gera automaticamente as etiquetas no formato exato, conectado ao banco de dados da empresa mantendo as etiquetas sempre atualizadas mesmo que tenha saido ou entrado funcionarios durante o mês. <br>Formato: Ink-Jet/laser Carta 25,4x101,6 6181 Pimaco."
+    texto: "Mensalmente a empresa ao qual faço estágio fornece cestas básicas aos seus colaboradores, cada cesta é etiquetada com informações do respectivo colaborador, percebi que o RH criava o arquivo de impressão manualmente pelo Microsoft Word, então automatizei o processo criando esta aplicação web que gera automaticamente as etiquetas no formato exato, conectado ao banco de dados da empresa mantendo as etiquetas sempre atualizadas mesmo que tenha saído ou entrado funcionários durante o mês. <br><b>Formato:</b> Ink-Jet/laser Carta 25,4x101,6 6181 Pimaco.",
+    tec: ["./img/tec/oracle.png","./img/tec/node.png","./img/tec/js.png", "./img/tec/html.png", "./img/tec/css.png"]
+
   },
   {
-    previa: "./img/gai.gif",
-    imagem: "./img/gai.jpg",
-    link: "https://naruto.fandom.com/pt-br/wiki/Might_Guy",
-    titulo: "Impar ou Par",
+    previa: "./img/parimpar.gif",
+    imagem: "./img/parimpar.jpg",
+    link: "https://github.com/aguiar-marcelo/par_ou_impar",
+    titulo: "Par ou Ímpar",
     texto: "Recebe um valor e responde se é Ímpar ou Par, mas antes valida se realmente é um numero, caso não, exibe mensagem de erro.",
     tec: ["./img/tec/js.png", "./img/tec/html.png", "./img/tec/css.png"]
-  },
+  }
 ];
 
 let posi0 = 0;
@@ -80,14 +82,12 @@ function loadCarousel() {
   let tecBox = document.getElementById("tecnologias")
   while (tecBox.hasChildNodes()) {
     tecBox.removeChild(tecBox.firstChild);
-    console.log('i')
   }
 
   for (let i = 0; i < Projetos[posi2].tec.length; i++) {
     var item = document.createElement("img");
     item.src = tecVetor[i];
     tecBox.appendChild(item);
-    console.log(tecVetor[i])
   }
 };
 
