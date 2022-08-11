@@ -4,18 +4,18 @@
 
     .s-inicio {
         width: 100%;
-        height: 35vw;
+        height: 55vw;
         margin-top: 30px;
         background-image: url(../img/coding.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: 103% 70vw;
-        background-position: -3vw -10px;
-        opacity: 12%;
+        background-size: 150% ;
+        background-position: -7vw -80px;
+        opacity: 10%;
     }
 
     .s-conteudo {
-        padding-top: 60px;
+        padding-top: 65px;
         position: absolute;
         top: -1px;
         width: 100%;
@@ -27,31 +27,25 @@
         color: #fff;
         text-align: center;
         margin: auto;
-        margin-top: 3%;
+        margin-top: 10%;
     }
 
     .inicio-titulo {
-        font-size: 7vw;
+        font-size: 10vw;
     }
 
     .inicio-subtitulo {
-        font-size: 3vw;
-        font-weight: 300;
-        font-style: italic;
-        color: #00ffff;
+        font-size: 4vw;
         margin-top: 1%;
     }
 
     .inicio-subtitulo span {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
-
 
     /*-------------sobre-------------*/
 
     .s-sobre {
-        background-color: #03141B;
-        width: 100%;
         padding: 5% 0;
         display: flex;
         flex-direction: column;
@@ -63,15 +57,15 @@
     }
 
     .elipse {
-        width: 40vw;
-        height: 40vw;
+        width: 60vw;
+        height: 60vw;
         margin: 0 auto;
         border-radius: 100%;
         background-color: #00ffff22;
     }
 
     .img-perfil {
-        width: 95%;
+        width: 96%;
         border-radius: 100%;
     }
 
@@ -79,24 +73,21 @@
         width: 80%;
         height: 100%;
         color: #ffffff;
-        font-size: 4vw;
+        font-size: 4.5vw;
         padding-top: 0.4%;
     }
 
-
     .s-titulo {
         font-size: 6vw;
-        margin-top: 5%;
+        margin-top: 10%;
+        margin-left: 5%;
     }
 
     .ponto-titulo-sobre {
-        position: absolute;
-        width: 0.6vw;
-        height: 0.6vw;
-        border-radius: 100px;
-        background-color: #00ffff;
-        margin-top: 2%;
-        margin-left: -2.5%;
+        width: 1.8vw;
+        height: 1.8vw;
+        margin-top: 3%;
+        margin-left: -5%;
     }
 
     /*-----------projetos-----------*/
@@ -125,7 +116,7 @@
     }
 
     .tecnologias img {
-        height: 8vw;
+        height: 10vw;
         margin: auto 3%;
     }
 
@@ -133,20 +124,20 @@
 
     .s-contatos {
         margin-top: 6vw;
-        padding: 5% 0;
+        padding: 10% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .contatos-redes {
-        width: 99%;
+        width: 95%;
         padding-top: 2.7vw;
     }
 
     .redes-item {
-        margin-bottom: 4vw;
-        margin-left: 25vw;
+        margin-bottom: 6vw;
+        margin-left: 12vw;
         display: flex;
         cursor: pointer;
         display: flex;
@@ -154,7 +145,7 @@
     }
 
     .redes-item a {
-        font-size: 4vw;
+        font-size: 6vw;
         color: #fff;
         font-family: Roboto, Helvetica Neue, sans-serif;
         transition: 0.5s;
@@ -163,35 +154,36 @@
 
     .redes-item a:hover {
         color: #00ffff;
-        padding-left: 3%;
+        padding-left: 0;
     }
 
     .redes-item i {
-        font-size: 5vw;
+        font-size: 8vw;
         padding-right: 2.5vw;
     }
 
     #mail {
-        font-size: 3.5vw;
+        font-size: 6.5vw;
+        padding-right: 2.3vw;
+    }#mail-text{
+        font-size: 5vw;
     }
 
     .contatos-form {
-        font-family: Roboto, Helvetica Neue, sans-serif;
-        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        padding-top: 2vw;
     }
 
     .ponto-titulo-contato {
-        position: absolute;
-        width: 0.4vw;
-        height: 0.4vw;
-        border-radius: 100px;
-        background-color: #00ffff;
-        margin-top: 3.5%;
-        margin-left: -5%;
+        width: 1.8vw;
+        height: 1.8vw;
+        margin-top: 3%;
+        margin-left: 8%;
     }
 
     .contato-form-titulo {
-        font-size: 4vw;
+        font-size: 6vw;
         font-weight: 400;
         margin-top: 5%;
         margin-left: 5%;
@@ -200,7 +192,7 @@
     .contatos-form input,
     textarea {
         margin-top: 5%;
-        width: 100%;
+        width: 70%;
         padding: 2.5% 5%;
         outline: 0;
         background-color: #0A303F;
@@ -208,8 +200,8 @@
         color: #fff;
         font-family: Roboto, Helvetica Neue, sans-serif;
         font-weight: 0;
-        font-size: 1.1vw;
-        border-radius: 3px;
+        font-size: 4.5vw;
+        border-radius: 5px;
     }
 
     .contatos-form input:focus {
@@ -223,13 +215,13 @@
 
     .contatos-form button {
         margin-top: 5%;
-        width: 65%;
-        padding: 1% 5%;
+        width: 81%;
+        padding: 2vw 0;
         outline: 0;
         background-color: #0A303F;
         color: #BAD2E3;
         font-family: Roboto, Helvetica Neue, sans-serif;
-        font-size: 1.1vw;
+        font-size: 5.5vw;
         border-radius: 3px;
         border: 2px solid #BAD2E3;
         cursor: pointer;
@@ -245,62 +237,60 @@
     /*-----------carreira-----------*/
 
     .s-carreira {
-        margin-top: 3vw;
+        margin-top: 0;
         font-family: Roboto, Helvetica Neue, sans-serif;
+        padding: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
     .carreira-divisao {
-        border-left: 3px solid #0A303F;
-        border-radius: 10px;
-        height: 23vw;
-        margin: auto 0;
+        display: none;
     }
 
     .carreira-titulo {
-        font-family: Uber, Roboto, Helvetica Neue, sans-serif;
-        font-size: 1.7vw;
-        margin: 0;
+        font-size: 7vw;
+        margin-top: 10%;
         font-weight: 100;
-        margin-bottom: -0.5vw;
-        color: #fff;
+        margin-bottom: -1vw;
     }
 
     .carreira-left {
-        width: 30%;
+        width: 90%;
+        padding-left: 5%;
     }
 
     .formacao-item {
-        margin-top: 1.3vw;
-        margin-left: 1vw;
+        margin-top: 8vw;
+        margin-left: 0;
         display: flex;
         color: #D9D9D9;
     }
 
     .formacao-item img {
-        width: 4vw;
+        width: 17vw;
         margin: auto 0;
         border-radius: 3px;
-        margin-right: 1vw;
+        margin-right: 3vw;
     }
 
     .formacao-item-titulo {
-        font-family: Uber, Roboto, Helvetica Neue, sans-serif;
-        font-size: 1.2vw;
+        font-size: 5vw;
         font-weight: 100;
     }
 
     .formacao-item-curso {
         font-family: Inter, Roboto, Helvetica Neue, sans-serif;
-        font-size: 1vw;
+        font-size: 4.3vw;
         font-weight: 300;
         margin-top: 0.1vw;
     }
 
     .formacao-item-periodo {
         font-family: Inter, Roboto, Helvetica Neue, sans-serif;
-        font-size: 0.9vw;
+        font-size: 4.3vw;
         font-weight: 500;
         color: #4E98CD;
     }
@@ -310,78 +300,76 @@
     }
 
     .cursos-item {
-        margin-top: 1vw;
-        margin-left: 1vw;
+        margin-top: 8vw;
+        margin-left: 0;
         color: #D9D9D9;
     }
 
     .cursos-item-titulo {
         font-family: Uber, Roboto, Helvetica Neue, sans-serif;
-        font-size: 1.2vw;
+        font-size: 6vw;
         font-weight: 100;
         color: #D9D9D9;
     }
 
     .cursos-item-curso {
-        font-family: Inter, Roboto, Helvetica Neue, sans-serif;
-        font-size: 1vw;
+        font-size: 6vw;
         font-weight: 300;
-        margin-top: 0.1vw;
+        margin-top: 2vw;
     }
 
     .cursos-item-periodo {
-        font-family: Inter, Roboto, Helvetica Neue, sans-serif;
-        font-size: 0.9vw;
+        font-size: 5vw;
         font-weight: 500;
-        margin-top: 0.1vw;
+        margin-top: 2vw;
         color: #4E98CD;
     }
 
     .carreira-right {
-        width: 30%;
+        width: 90%;
+        padding-left: 5%;
     }
 
     .experiencia-titulo {
-        font-family: Uber, Roboto, Helvetica Neue, sans-serif;
-        font-size: 1.7vw;
-        margin: 0;
-        margin-left: 4vw;
+        font-size: 7vw;
+        margin-top: 10%;
+        margin-left: 0;
         font-weight: 100;
-        margin-bottom: -0.5vw;
+        margin-bottom: -1vw;
         color: #fff;
     }
 
     .experiencia-item {
-        margin-top: 1.3vw;
-        margin-left: 5vw;
+        margin-top: 7vw;
+        margin-left: 0;
         color: #D9D9D9;
     }
 
     .experiencia-item-titulo {
         font-family: Roboto, Helvetica Neue, sans-serif;
-        font-size: 1.2vw;
+        font-size: 5vw;
         font-weight: 500;
         color: #D9D9D9;
     }
 
     .experiencia-item-curso {
         font-family: Inter, Roboto, Helvetica Neue, sans-serif;
-        font-size: 01vw;
+        font-size: 4.5vw;
         font-weight: 300;
-        margin-top: 0.3vw;
+        margin-top: 1.5vw;
     }
 
     .experiencia-item-periodo {
         font-family: Inter, Roboto, Helvetica Neue, sans-serif;
-        font-size: 0.9vw;
+        font-size: 4.5vw;
         font-weight: 500;
-        margin-top: 0.1vw;
+        margin-top: 2vw;
         color: #4E98CD;
     }
 
     .experiencia-item-descricao {
-        font-size: 0.9vw;
-        margin-top: 0.3vw;
+        font-size: 4.5vw;
+        margin-top: 2vw;
     }
 
     /*-----------footer-----------*/
@@ -389,13 +377,13 @@
     .s-footer {
         text-align: center;
         width: 100%;
-        margin-top: 3vw;
+        margin-top: 13vw;
     }
 
     .footer-legenda {
         background-color: #03141B;
-        font-size: 1vw;
-        padding: 1vw;
+        font-size: 4vw;
+        padding: 4vw;
         font-family: Inter, Roboto, Helvetica Neue, sans-serif;
         font-weight: 300;
 
@@ -407,8 +395,9 @@
     }
 
     .footer-frase {
-        padding: 0.7vw;
-        font-size: 1.1vw;
+        padding-top: 4vw;
+        padding-bottom: 6vw;
+        font-size: 4vw;
         background-color: #00223A;
         font-family: Dancing Script, Roboto, Helvetica Neue, sans-serif;
     }
