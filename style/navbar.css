@@ -1,0 +1,138 @@
+.nav {
+  width: 100%;
+  background-color: #05212C;
+  border-bottom: 1px solid #003b64;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: 1s;
+}
+
+.nav-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 10px 0.5%;
+  padding: 7px 1%;
+  font-size: 16px;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-weight: 400;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #969db0;
+  padding: 5px 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+
+}
+
+.nav-item a:hover {
+  color: #dfe4ef;
+  font-weight: 400;
+  font-size: 16.5px;
+  border-bottom: 2px solid #4e98cd;
+}
+
+.nav-vertical {
+  text-align: center;
+  display: none;
+  transition: 0.5s;
+  background-color: #05212C;
+  border-bottom: 1px solid #003b64;
+  transform: translate3d(0, -110%, 0);
+}
+
+/*---------------BOTAO DA NAVBAR-------------------*/
+.navbutton {
+  position: absolute;
+  top: 4vw;
+  right: 8vw;
+  display: none;
+}
+
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+.navbutton label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 13vw;
+}
+
+.navbutton label span {
+  position: absolute;
+  display: block;
+  height: 7px;
+  width: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 13px;
+}
+
+label span:nth-child(3) {
+  top: 26px;
+}
+
+#checkbox-menu:checked+label span:nth-child(1) {
+  transform: rotate(-45deg);
+  height: 5px;
+  top: 5vw;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+  transform: rotate(45deg);
+  height: 5px;
+  top: 5vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-horizontal {
+    display: none;
+  }
+
+  .nav-vertical {
+    display: block;
+  }
+
+  .navbutton {
+    display: block;
+  }
+
+  .nav {
+    height: 17vw;
+  }
+
+  .nav-item {
+    margin: 10px 0.5%;
+    padding: 7px 1%;
+    font-size: 7vw;
+  }
+
+  .nav-item a:hover {
+    color: #dfe4ef;
+    font-weight: 400;
+    font-size: 7.5vw;
+    border-bottom: 2px solid #4e98cd;
+  }
+
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,8 @@
     <title>Portfólio | Marcelo Aguiar</title>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/projetos.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/index-responsive.css">
     <link rel="icon"
         href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/81/male-technologist-type-4_1f468-1f3fd-200d-1f4bb.png">
 
@@ -26,18 +29,42 @@
 </head>
 
 <body>
-    <div class="nav">
-        <div class="nav-item">
-            <a href="#sobre">Sobre mim</a>
+    <div class="nav" id="nav">
+        <div class="nav-horizontal">
+            <div class="nav-item">
+                <a href="#sobre">Sobre mim</a>
+            </div>
+            <div class="nav-item">
+                <a href="#projetos">Projetos</a>
+            </div>
+            <div class="nav-item">
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="nav-item">
+                <a href="#formacao">Formação</a>
+            </div>
         </div>
-        <div class="nav-item">
-            <a href="#projetos">Projetos</a>
+        <div class="nav-vertical" id="nav-vertical">
+            <div class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre mim</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#projetos">Projetos</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#formacao">Formação</a>
+            </div>
         </div>
-        <div class="nav-item">
-            <a href="#contato">Contato</a>
-        </div>
-        <div class="nav-item">
-            <a href="#formacao">Formação</a>
+        <div class="navbutton">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
 
     </div>
@@ -45,7 +72,7 @@
     </div>
     <div class="s-conteudo">
         <div class="inicio-txt" data-anime="top">
-            <div class="inicio-titulo" >Marcelo Aguiar</div>
+            <div class="inicio-titulo">Marcelo Aguiar</div>
             <div class="inicio-subtitulo">
                 <span id="sobre">
                     < </span>desenvolvedor FullStack /<span>></span>
@@ -64,7 +91,7 @@
     <div class="s-sobre">
         <div class="sobre-img" data-anime="left">
             <div class="elipse">
-                <img id="teste" class="img-perfil" src="img/perfil-elipse.jpg">
+              <!-- <img id="teste" class="img-perfil" src="img/perfil-elipse.jpg">--> 
             </div>
         </div>
         <div class="sobre-texto" data-anime="right">
@@ -90,10 +117,9 @@
                 minhas habilidades</p>
             <div id="projetos"></div>
         </div>
-
     </div>
     <div class="s-projetos" data-anime="bottom">
-        <div class="projetos-titulo" >
+        <div class="projetos-titulo">
             <div>Projetos</div>
         </div>
 
@@ -113,10 +139,10 @@
             <div id="rightItem" class="item-geral"></div>
         </div>
 
-        <div class="tecnologias-titulo" >
+        <div class="tecnologias-titulo" id="contato">
             Tecnologias Utilizadas
         </div>
-        <div class="tecnologias" id="tecnologias" >
+        <div class="tecnologias" id="tecnologias">
             <!--<img src="https://media.bitdegree.org/storage/media/images/2018/12/node-js-interview-questions-logo-2-266x300.png"
                 alt="">
             <img src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="">
@@ -128,7 +154,7 @@
            -->
         </div>
     </div>
-    <div class="s-contatos" >
+    <div class="s-contatos">
         <div class="contatos-redes" data-anime="left">
             <div class="redes-item">
                 <a href="https://api.whatsapp.com/send?phone=5513981651345&text=Oi%2C%20vim%20pelo%20seu%20portf%C3%B3lio!"
@@ -166,13 +192,13 @@
         </div>
 
     </div>
-    <div class="s-carreira" data-anime="bottom">
-        <div class="carreira-left" >
-            <div class="formacao" >
+    <div class="s-carreira">
+        <div class="carreira-left" data-anime="left">
+            <div class="formacao">
                 <h1 class="carreira-titulo">Formação Acadêmica</h1>
                 <div class="formacao-item">
                     <img src="img/unisanta.jpg" id="unisanta" alt="">
-                    <div >
+                    <div>
                         <div class="formacao-item-titulo">Universidade Santa Cecília</div>
                         <div class="formacao-item-curso">Sistemas de Informação</div>
                         <div class="formacao-item-periodo">cursando (até 12/2025)</div>
@@ -204,8 +230,8 @@
 
             </div>
         </div>
-        <div class="carreira-divisao"></div>
-        <div class="carreira-right">
+        <div class="carreira-divisao" data-anime="bottom"></div>
+        <div class="carreira-right" data-anime="right">
             <div class="experiencia">
                 <h1 class="experiencia-titulo">Experiência Profissional</h1>
                 <div class="experiencia-item">
@@ -235,10 +261,10 @@
             </div>
         </div>
     </div>
-    <div class="s-footer" >
-        <div class="footer-legenda" >
+    <div class="s-footer">
+        <div class="footer-legenda">
             Você pode encontrar esse portfólio
-            no meu <a href="">Github</a>. Marcelo Aguiar - 2022
+            no meu <a href="https://github.com/aguiar-marcelo" target="_blank">Github</a>. Marcelo Aguiar - 2022
         </div>
         <div class="footer-frase">
             <b>“ </b>O sucesso é apenas disciplina praticada todos os dias<b> ”</b>
@@ -249,6 +275,7 @@
     <script src="script/carousel.js"></script>
     <script src="script/email.js"></script>
     <script src="script/scroll-animation.js"></script>
+    <script src="script/navbar.js"></script>
 </body>
 
 </html>

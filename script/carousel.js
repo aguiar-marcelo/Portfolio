@@ -11,10 +11,10 @@ let Projetos = [
   {
     previa: "./img/naruto.gif",
     imagem: "./img/naruto.jpg",
-    link: "https://naruto.fandom.com/pt-br/wiki/Naruto_Uzumaki",
-    titulo: "Library",
-    texto: "Site fictício de venda de Livros, permite Visualizar os Livros à venda, sinopse, autor e sua Biografia, adicione os Livros de sua preferência para o carrinho de compras.",
-    tec: ["./img/tec/react.png","./img/tec/node.png","./img/tec/mysql.png", "./img/tec/html.png", "./img/tec/css.png"]
+    link: "https://github.com/aguiar-marcelo/Gerenciador_de_projetos",
+    titulo: "Gerenciador de Projetos",
+    texto: "Aplicação web que gerencia projetos e seus custos, adicionando seus projetos, permite alterá-los e excluí-los ou adicionar diferentes tipos de serviços para cada projeto. <br> Sistema controla e indica quando o orçamento do projeto é extrapolado pelos custos dos serviços.",
+    tec: ["./img/tec/react.png", "./img/tec/html.png", "./img/tec/css.png"]
 
   },
   {

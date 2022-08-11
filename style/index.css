@@ -39,41 +39,6 @@ body {
     transform: translate3d(0,0,0);/*x y z*/
 }
 
-/*-------------navbar-------------*/
-.nav {
-    width: 100%;
-    background-color: #05212C;
-    border-bottom: 1px solid #003b64;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-}
-
-.nav-item {
-    margin: 10px 0.5%;
-    padding: 7px 1%;
-    font-size: 16px;
-    font-family: Roboto, Helvetica Neue, sans-serif;
-    font-weight: 400;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #969db0;
-    padding: 5px 5px;
-    border-bottom: 2px solid transparent;
-    transition: 0.3s;
-
-}
-
-.nav-item a:hover {
-    color: #dfe4ef;
-    font-weight: 400;
-    font-size: 16.5px;
-    border-bottom: 2px solid #4e98cd;
-}
 
 /*-------------inicio-------------*/
 
@@ -103,8 +68,8 @@ body {
     color: #fff;
     font-family: Uber, Roboto, Helvetica Neue, sans-serif;
     text-align: center;
-    margin: auto auto;
-    margin-top: 10%;
+    margin: auto;
+    margin-top: 8%;
 }
 
 .inicio-titulo {
@@ -167,7 +132,6 @@ body {
 .s-sobre {
     background-color: #03141B;
     width: 100%;
-    height: 28vw;
     display: flex;
 }
 
@@ -215,8 +179,8 @@ body {
     height: 0.6vw;
     border-radius: 100px;
     background-color: #00ffff;
-    margin-top: 1%;
-    margin-left: -1%;
+    margin-top: 2%;
+    margin-left: -2.5%;
 }
 
 /*-----------projetos-----------*/
@@ -240,7 +204,7 @@ body {
     text-align: center;
     margin: -1.1vw auto;
     font-size: 1.7vw;
-    background-color: #05212C;
+    background-color: #052c12;
 }
 
 .tecnologias-titulo {
@@ -321,8 +285,8 @@ body {
     height: 0.4vw;
     border-radius: 100px;
     background-color: #00ffff;
-    margin-top: 0.7%;
-    margin-left: -0.8%;
+    margin-top: 3.5%;
+    margin-left: -5%;
 }
 
 .contato-form-titulo {
