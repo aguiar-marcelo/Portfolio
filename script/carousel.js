@@ -21,7 +21,7 @@ let Projetos = [
     previa: "./img/kakashi.gif",
     imagem: "./img/kakashi.jpg",
     link: "https://github.com/aguiar-marcelo/CRUD-conteiners",
-    titulo: "Sistema de Containers",
+    titulo: "Containers",
     texto: "Sistema Crud (Create, Read, Update e Delete) de containers, realiza as quatro principais operações utilizadas em bases de dados. <br> Permite adicionar, alterar ou deletar um container e visualizar em tempo real os containers existentes e suas características.<br> sistema Dividido em:<br><br><b>Servidor:</b> que roda uma Api conectada ao Banco de Dados.<br><b>Cliente:</b> Aplicação web que realiza requisições ao servidor por meio da Api.",
     tec: ["./img/tec/react.png","./img/tec/node.png","./img/tec/mysql.png", "./img/tec/html.png", "./img/tec/css.png"]
   },
@@ -50,6 +50,7 @@ let posi2 = 2;
 let posi3 = 3;
 let posi4 = 4;
 
+var mainView = document.getElementById("principal");
 function loadCarousel() {
 
   let leftItem = document.getElementById("leftItem");
@@ -58,7 +59,7 @@ function loadCarousel() {
   let leftPrev = document.getElementById("leftPrev");
   leftPrev.style.backgroundImage = "url(" + Projetos[posi1].imagem + ")";
 
-  let mainView = document.getElementById("principal");
+  
   mainView.style.backgroundImage = "url(" + Projetos[posi2].previa + ")";
 
   let rightPrev = document.getElementById("rightPrev");
@@ -133,3 +134,9 @@ document.addEventListener('keyup', function (e) {
 });
 
 loadCarousel();
+scrollLeft();
+scrollLeft();
+scrollLeft();
+scrollLeft();
+scrollLeft();
+

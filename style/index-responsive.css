@@ -1,6 +1,6 @@
 @media only screen and (max-width: 500px) {
 
-    /*-------------inicio-------------*/
+    /*--.-----------inicio-------------*/
 
     .s-inicio {
         width: 100%;
@@ -54,6 +54,7 @@
 
     .sobre-img {
         width: 100%;
+        margin-top: 3vw;
     }
 
     .elipse {
@@ -97,18 +98,19 @@
         width: 70%;
         height: 3vw;
         border-top: 2px solid #00ffff;
-        margin: 10vw auto;
+        margin: 13vw auto;
         margin-bottom: 0;
     }
 
     .projetos-titulo div {
-        width: 23vw;
-        margin: -3.5vw auto;
-        font-size: 5vw;
+        width: 27vw;
+        margin: -4.3vw auto;
+        font-size: 6vw;
     }
 
     .tecnologias-titulo {
-        font-size: 4vw;
+        font-size: 5vw;
+        margin-top: 2vw;
     }
 
     .tecnologias {
@@ -215,7 +217,7 @@
 
     .contatos-form button {
         margin-top: 5%;
-        width: 81%;
+        width: 80%;
         padding: 2vw 0;
         outline: 0;
         background-color: #0A303F;
@@ -397,13 +399,13 @@
     .footer-frase {
         padding-top: 4vw;
         padding-bottom: 6vw;
-        font-size: 4vw;
+        font-size: 4.5vw;
         background-color: #00223A;
         font-family: Dancing Script, Roboto, Helvetica Neue, sans-serif;
     }
 
     .footer-frase b {
-        font-size: 1.2vw;
+        font-size: 5vw;
         font-family: Helvetica Neue, sans-serif;
 
     }

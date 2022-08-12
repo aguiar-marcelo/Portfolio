@@ -5,7 +5,7 @@ body {
     background-color: #05212C;
     scroll-behavior: smooth;
     color: #ffffff;
-    /*verflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -73,7 +73,7 @@ body {
 }
 
 .inicio-titulo {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .inicio-subtitulo {
@@ -204,7 +204,7 @@ body {
     text-align: center;
     margin: -1.1vw auto;
     font-size: 1.7vw;
-    background-color: #052c12;
+    background-color: #05212C;
 }
 
 .tecnologias-titulo {
@@ -275,8 +275,8 @@ body {
 }
 
 .contatos-form {
-    font-family: Roboto, Helvetica Neue, sans-serif;
-    font-weight: 300;
+    font-family: Uber,Roboto, Helvetica Neue, sans-serif;
+    font-weight: 100;
 }
 
 .ponto-titulo-contato {
