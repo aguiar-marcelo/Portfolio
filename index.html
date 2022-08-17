@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="style/projetos.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/index-responsive.css">
-    <link rel="icon"
-        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/81/male-technologist-type-4_1f468-1f3fd-200d-1f4bb.png">
-
-
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/81/male-technologist-type-4_1f468-1f3fd-200d-1f4bb.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -41,7 +38,7 @@
                 <a href="#contato">Contato</a>
             </div>
             <div class="nav-item">
-                <a href="#formacao">Formação</a>
+                <a href="#formacao">Carreira</a>
             </div>
         </div>
         <div class="nav-vertical" id="nav-vertical">
@@ -55,7 +52,7 @@
                 <a class="nav-link" href="#contato">Contato</a>
             </div>
             <div class="nav-item">
-                <a class="nav-link" href="#formacao">Formação</a>
+                <a class="nav-link" href="#formacao">Carreira</a>
             </div>
         </div>
         <div class="navbutton">
@@ -127,7 +124,7 @@
             <div id="leftItem" class="item-geral"></div>
             <div id="leftPrev" class="item-geral"></div>
             <div id="principal" class="item-geral">
-                <div class="projeto-principal-conteudo">
+                <div class="projeto-principal-conteudo" id="projetoConteudo">
                     <div class="projeto-principal-titulo" id="titulo"></div>
                     <div class="projeto-principal-texto" id="texto"></div>
 
@@ -138,7 +135,11 @@
             <div id="rightPrev" class="item-geral"></div>
             <div id="rightItem" class="item-geral"></div>
         </div>
-
+        <div class="projetos-sliders">
+            <button id="leftSlider"><i class="fa fa-arrow-left"></i></button>
+            <button id="info"><i id="infoicon" class="fa fa-eye"></i></button>
+            <button id="rightSlider"><i class="fa fa-arrow-right"></i></button>
+        </div>
         <div class="tecnologias-titulo" id="contato">
             Tecnologias Utilizadas
         </div>

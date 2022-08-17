@@ -9,11 +9,11 @@ let Projetos = [
   },
 
   {
-    previa: "./img/naruto.gif",
-    imagem: "./img/naruto.jpg",
+    previa: "./img/gpi.gif",
+    imagem: "./img/gpi.jpg",
     link: "https://github.com/aguiar-marcelo/Gerenciador_de_projetos",
     titulo: "Gerenciador de Projetos",
-    texto: "Aplicação web que gerencia projetos e seus custos, adicionando seus projetos, permite alterá-los e excluí-los ou adicionar diferentes tipos de serviços para cada projeto. <br> Sistema controla e indica quando o orçamento do projeto é extrapolado pelos custos dos serviços.",
+    texto: "Aplicação web que gerencia projetos e seus custos, adicionando seus projetos, permite alterá-los e excluí-los ou adicionar diferentes tipos de serviços para cada projeto. <br> Sistema controla e indica quando o orçamento do projeto é extrapolado pelos custos dos serviços. <br>Todo o armazenamento é feito em um arquivo JSON.",
     tec: ["./img/tec/react.png", "./img/tec/html.png", "./img/tec/css.png"]
 
   },
@@ -124,19 +124,26 @@ document.getElementById("rightPrev").addEventListener("click", scrollRight);
 document.getElementById("leftPrev").addEventListener("click", scrollLeft);
 document.getElementById("leftItem").addEventListener("click", scrollLeft);
 
-//teclas do teclado <- e -> para alterar o carrousel
-document.addEventListener('keyup', function (e) {
-  if (e.keyCode === 37) {
-    scrollLeft();
-  } else if (e.keyCode === 39) {
-    scrollRight();
+document.getElementById("leftSlider").addEventListener("click", scrollLeft);
+document.getElementById("rightSlider").addEventListener("click", scrollRight);
+
+
+const projetoConteudo = document.getElementById("projetoConteudo")
+function show(){
+  let conteudo = getComputedStyle(projetoConteudo).getPropertyValue("opacity");
+  if(conteudo =='1'){
+    projetoConteudo.style.opacity = '0';
+    document.getElementById("link-repositorio").style.opacity = '0';
+    document.getElementById("infoicon").className = "fa fa-eye";
+  }else{
+    projetoConteudo.style.opacity = '1';
+    document.getElementById("link-repositorio").style.opacity = '1';
+    document.getElementById("infoicon").className = "fa fa-eye-slash";
   }
-});
+}
+document.getElementById("info").addEventListener("click", show);
+
+
 
 loadCarousel();
-scrollLeft();
-scrollLeft();
-scrollLeft();
-scrollLeft();
-scrollLeft();
 
