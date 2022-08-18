@@ -86,6 +86,8 @@
   border: 2px solid #BAD2E3;
   text-decoration: none;
   text-shadow: 1px 0px 3px #000;
+  transition: 0.3s;
+  opacity: 0;
 }
 
 #link-repositorio:hover {
@@ -135,6 +137,8 @@
 
 @media only screen and (min-width: 500px){
   #principal:hover .projeto-principal-conteudo {
+  opacity: 1;
+}#principal:hover #link-repositorio{
   opacity: 1;
 }
 }

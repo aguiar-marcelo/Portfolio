@@ -1,8 +1,8 @@
 let Projetos = [
   {
-    previa: "./img/itachi.gif",
-    imagem: "./img/itachi.jpg",
-    link: "https://naruto.fandom.com/pt-br/wiki/Itachi_Uchiha",
+    previa: "./img/caixa_eletronico.gif",
+    imagem: "./img/caixa_eletronico.jpg",
+    link: "https://github.com/aguiar-marcelo/caixa_eletronico",
     titulo: "Caixa Eletronico",
     texto: "Aplicaçao Desktop que simula um caixa eletrônico, Verifique qual seu saldo em conta e realize saques fictício, tambem permite optar por notas de valor baixo ou alto.",
     tec: ["./img/tec/csharp.png"]
@@ -13,7 +13,7 @@ let Projetos = [
     imagem: "./img/gpi.jpg",
     link: "https://github.com/aguiar-marcelo/Gerenciador_de_projetos",
     titulo: "Gerenciador de Projetos",
-    texto: "Aplicação web que gerencia projetos e seus custos, adicionando seus projetos, permite alterá-los e excluí-los ou adicionar diferentes tipos de serviços para cada projeto. <br> Sistema controla e indica quando o orçamento do projeto é extrapolado pelos custos dos serviços. <br>Todo o armazenamento é feito em um arquivo JSON.",
+    texto: "Aplicação web que gerencia projetos e seus custos, adicionando seus projetos, permite alterá-los e excluí-los ou adicionar diferentes tipos de serviços para cada projeto. <br> Sistema controla e indica quando o orçamento do projeto é extrapolado pelos custos dos serviços.<br><br>Todo o armazenamento é feito em um arquivo JSON.",
     tec: ["./img/tec/react.png", "./img/tec/html.png", "./img/tec/css.png"]
 
   },
