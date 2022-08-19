@@ -18,16 +18,16 @@ let Projetos = [
 
   },
   {
-    previa: "./img/kakashi.gif",
-    imagem: "./img/kakashi.jpg",
+    previa: "./img/crud_container.gif",
+    imagem: "./img/crud_container.jpg",
     link: "https://github.com/aguiar-marcelo/CRUD-conteiners",
     titulo: "Containers",
     texto: "Sistema Crud (Create, Read, Update e Delete) de containers, realiza as quatro principais operações utilizadas em bases de dados. <br> Permite adicionar, alterar ou deletar um container e visualizar em tempo real os containers existentes e suas características.<br> sistema Dividido em:<br><br><b>Servidor:</b> que roda uma Api conectada ao Banco de Dados.<br><b>Cliente:</b> Aplicação web que realiza requisições ao servidor por meio da Api.",
     tec: ["./img/tec/react.png","./img/tec/node.png","./img/tec/mysql.png", "./img/tec/html.png", "./img/tec/css.png"]
   },
   {
-    previa: "./img/lee.gif",
-    imagem: "./img/lee.png",
+    previa: "./img/etiquetas.gif",
+    imagem: "./img/etiquetas.jpg",
     link: "https://github.com/aguiar-marcelo/Gerador_de_Etiquetas",
     titulo: "Gerador de Etiquetas",
     texto: "Mensalmente a empresa ao qual faço estágio fornece cestas básicas aos seus colaboradores, cada cesta é etiquetada com informações do respectivo colaborador, percebi que o RH criava o arquivo de impressão manualmente pelo Microsoft Word, então automatizei o processo criando esta aplicação web que gera automaticamente as etiquetas no formato exato, conectado ao banco de dados da empresa mantendo as etiquetas sempre atualizadas mesmo que tenha saído ou entrado funcionários durante o mês. <br><b>Formato:</b> Ink-Jet/laser Carta 25,4x101,6 6181 Pimaco.",
