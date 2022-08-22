@@ -9,9 +9,9 @@ body {
 }
 
 #preloadteste img{
+    position: absolute;
     width: 30px;
-    display: flex;
-    top: 30%;
+    top: -30%;
 }
 
 @font-face {
