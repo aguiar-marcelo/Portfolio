@@ -1,11 +1,11 @@
 const Projetos = [
   {
-    previa: "./img/caixa_eletronico.gif",
-    imagem: "./img/caixa_eletronico.jpg",
+    previa: "img/perfil-elipse.jpg",
+    imagem: "img/perfil-elipse.jpg",
     link: "https://github.com/aguiar-marcelo/caixa_eletronico",
     titulo: "Caixa Eletronico",
     texto: "Aplicaçao Desktop que simula um caixa eletrônico, Verifique qual seu saldo em conta e realize saques fictício, tambem permite optar por notas de valor baixo ou alto.",
-    tec: `<img src="./img/tec/csharp.png">`
+    tec: `<img src="./img/tec/csharp.png"> <img id="teste" class="img-perfil" src="img/perfil-elipse.jpg">`
   },
 
   {
