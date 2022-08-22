@@ -7,15 +7,6 @@ const Projetos = [
     texto: "Aplicaçao Desktop que simula um caixa eletrônico, Verifique qual seu saldo em conta e realize saques fictício, tambem permite optar por notas de valor baixo ou alto.",
     tec: `<img src="./img/tec/csharp.png">`
   },
-
-  {
-    previa: "./img/gpi.gif",
-    imagem: "./img/gpi.jpg",
-    link: "https://github.com/aguiar-marcelo/Gerenciador_de_projetos",
-    titulo: "Gerenciador de Projetos",
-    texto: "Aplicação web que gerencia projetos e seus custos, adicionando seus projetos, permite alterá-los e excluí-los ou adicionar diferentes tipos de serviços para cada projeto. <br> Sistema controla e indica quando o orçamento do projeto é extrapolado pelos custos dos serviços.<br><br>Todo o armazenamento é feito em um arquivo JSON.",
-    tec: `<img src="./img/tec/react.png"> <img src="./img/tec/html.png"> <img src="./img/tec/css.png">`
-  },
   {
     previa: "./img/crud_container.gif",
     imagem: "./img/crud_container.jpg",
@@ -24,6 +15,15 @@ const Projetos = [
     texto: "Sistema Crud (Create, Read, Update e Delete) de containers, realiza as quatro principais operações utilizadas em bases de dados. <br> Permite adicionar, alterar ou deletar um container e visualizar em tempo real os containers existentes e suas características.<br> sistema Dividido em:<br><br><b>Servidor:</b> que roda uma Api conectada ao Banco de Dados.<br><b>Cliente:</b> Aplicação web que realiza requisições ao servidor por meio da Api.",
     tec: `<img src="./img/tec/react.png"> <img src="./img/tec/node.png"> <img src="./img/tec/mysql.png"> <img src="./img/tec/html.png"> <img src="./img/tec/css.png">`
   },
+  {
+    previa: "./img/gpi.gif",
+    imagem: "./img/gpi.jpg",
+    link: "https://github.com/aguiar-marcelo/Gerenciador_de_projetos",
+    titulo: "Gerenciador de Projetos",
+    texto: "Aplicação web que gerencia projetos e seus custos, adicionando seus projetos, permite alterá-los e excluí-los ou adicionar diferentes tipos de serviços para cada projeto. <br> Sistema controla e indica quando o orçamento do projeto é extrapolado pelos custos dos serviços.<br><br>Todo o armazenamento é feito em um arquivo JSON.",
+    tec: `<img src="./img/tec/react.png"> <img src="./img/tec/html.png"> <img src="./img/tec/css.png">`
+  },
+
   {
     previa: "./img/etiquetas.gif",
     imagem: "./img/etiquetas.jpg",
