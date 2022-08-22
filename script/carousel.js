@@ -1,11 +1,11 @@
 const Projetos = [
   {
-    previa: "img/perfil-elipse.jpg",
-    imagem: "img/perfil-elipse.jpg",
+    previa: "./img/caixa_eletronico.gif",
+    imagem: "./img/caixa_eletronico.jpg",
     link: "https://github.com/aguiar-marcelo/caixa_eletronico",
     titulo: "Caixa Eletronico",
     texto: "Aplicaçao Desktop que simula um caixa eletrônico, Verifique qual seu saldo em conta e realize saques fictício, tambem permite optar por notas de valor baixo ou alto.",
-    tec: `<img src="./img/tec/csharp.png"> <img id="teste" class="img-perfil" src="img/perfil-elipse.jpg">`
+    tec: `<img src="./img/tec/csharp.png">`
   },
 
   {
@@ -43,43 +43,32 @@ const Projetos = [
   }
 ];
 
-let posi0 = 0;
-let posi1 = 1;
-let posi2 = 2;
-let posi3 = 3;
-let posi4 = 4;
+var posi0 = 0;
+var posi1 = 1;
+var posi2 = 2;
+var posi3 = 3;
+var posi4 = 4;
 
-var mainView = document.getElementById("principal");
+const leftItem = document.getElementById("leftItem");
+const leftPrev = document.getElementById("leftPrev");
+const mainView = document.getElementById("principal");
+const rightPrev = document.getElementById("rightPrev");
+const rightItem = document.getElementById("rightItem");
+const linkTag = document.getElementById("link-repositorio");
+const PrincipalTitulo = document.getElementById("titulo");
+const PrincipalTexto = document.getElementById("texto");
+const tecBox = document.getElementById("tecnologias");
+
 function loadCarousel() {
-
-  let leftItem = document.getElementById("leftItem");
   leftItem.style.backgroundImage = "url(" + Projetos[posi0].imagem + ")";
-
-  let leftPrev = document.getElementById("leftPrev");
   leftPrev.style.backgroundImage = "url(" + Projetos[posi1].imagem + ")";
-
-
   mainView.style.backgroundImage = "url(" + Projetos[posi2].previa + ")";
-
-  let rightPrev = document.getElementById("rightPrev");
   rightPrev.style.backgroundImage = "url(" + Projetos[posi3].imagem + ")";
-
-  let rightItem = document.getElementById("rightItem");
   rightItem.style.backgroundImage = "url(" + Projetos[posi4].imagem + ")";
-
-
-  let linkTag = document.getElementById("link-repositorio")
   linkTag.href = Projetos[posi2].link;
-
-  let PrincipalTitulo = document.getElementById("titulo")
   PrincipalTitulo.innerHTML = Projetos[posi2].titulo;
-
-  let PrincipalTexto = document.getElementById("texto")
   PrincipalTexto.innerHTML = Projetos[posi2].texto;
-
-
-  let tecBox = document.getElementById("tecnologias")
-  tecBox.innerHTML = Projetos[posi2].tec
+  tecBox.innerHTML = Projetos[posi2].tec;
 };
 
 function scrollRight() {
@@ -113,14 +102,14 @@ document.getElementById("rightItem").addEventListener("click", scrollRight);
 document.getElementById("rightPrev").addEventListener("click", scrollRight);
 document.getElementById("leftPrev").addEventListener("click", scrollLeft);
 document.getElementById("leftItem").addEventListener("click", scrollLeft);
-
 document.getElementById("leftSlider").addEventListener("click", scrollLeft);
 document.getElementById("rightSlider").addEventListener("click", scrollRight);
 
-const projetoConteudo = document.getElementById("projetoConteudo")
+const projetoConteudo = document.getElementById("projetoConteudo");
+
 function show() {
-  let conteudo = getComputedStyle(projetoConteudo).getPropertyValue("opacity");
-  if (conteudo == '1') {
+  let opacidade = getComputedStyle(projetoConteudo).getPropertyValue("opacity");
+  if (opacidade == '1') {
     projetoConteudo.style.opacity = '0';
     document.getElementById("link-repositorio").style.opacity = '0';
     document.getElementById("infoicon").className = "fa fa-eye";
@@ -133,3 +122,4 @@ function show() {
 document.getElementById("info").addEventListener("click", show);
 
 loadCarousel();
+
