@@ -8,6 +8,12 @@ body {
     overflow-x: hidden;
 }
 
+#preloadteste img{
+    width: 30px;
+    display: flex;
+    top: 30%;
+}
+
 @font-face {
     font-family: uber;
     src: url(Uber.woff);
