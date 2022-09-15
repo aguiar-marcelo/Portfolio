@@ -8,9 +8,9 @@ const Projetos = [
     tec: `<img src="./img/tec/csharp.png">`
   },
   {
-    previa: "./img/crud_container.gif",
-    imagem: "./img/crud_container.jpg",
-    link: "https://github.com/aguiar-marcelo/CRUD-conteiners",
+    previa: "./img/crud_containerNOVO.jpg",
+    imagem: "./img/crud_containerNOVO.jpg",
+    link: "https://github.com/aguiar-marcelo/Crud_Containers",
     titulo: "Containers",
     texto: "Sistema Crud (Create, Read, Update e Delete) de containers, realiza as quatro principais operações utilizadas em bases de dados. <br> Permite adicionar, alterar ou deletar um container e visualizar em tempo real os containers existentes e suas características.<br> sistema Dividido em:<br><br><b>Servidor:</b> que roda uma Api conectada ao Banco de Dados.<br><b>Cliente:</b> Aplicação web que realiza requisições ao servidor por meio da Api.",
     tec: `<img src="./img/tec/react.png"> <img src="./img/tec/node.png"> <img src="./img/tec/mysql.png"> <img src="./img/tec/html.png"> <img src="./img/tec/css.png">`
