@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-#preloadteste img{
+#preloadteste img {
     position: absolute;
     width: 30px;
     top: -30%;
@@ -20,16 +20,19 @@ body {
 }
 
 /*animacao scrool*/
-[data-anime]{
+[data-anime] {
     opacity: 0;
     transition: 0.7s;
 }
-[data-anime="left"]{
-    transform: translate3d(-50px,0,0);/*x y z*/
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+    /*x y z*/
 }
 
-[data-anime="right"]{
-    transform: translate3d(50px,0,0);/*x y z*/
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+    /*x y z*/
 }
 
 [data-anime="top"] {
@@ -40,9 +43,10 @@ body {
     transform: translate3d(0, 50px, 0);
 }
 
-[data-anime].animate{
+[data-anime].animate {
     opacity: 1;
-    transform: translate3d(0,0,0);/*x y z*/
+    transform: translate3d(0, 0, 0);
+    /*x y z*/
 }
 
 
@@ -83,17 +87,17 @@ body {
 }
 
 .inicio-subtitulo {
-    font-size: 1vw;
+    font-size: 1.3vw;
     font-family: 'Inter', Roboto, Helvetica Neue, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
     color: #00ffff;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
-.inicio-subtitulo span {
+.inicio-subtitulo .bold {
     font-family: Uber;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 
 .feixes {
@@ -221,8 +225,85 @@ body {
     font-weight: 300;
     letter-spacing: 1px;
     text-align: center;
-    transition: 1.5s; 
+    transition: 1.5s;
 }
+
+
+.destaque {
+    display: flex;
+    background-color: #072e3d;
+    margin-top: 3%;
+}
+
+.card-box {
+    border: 1px solid #ffffff3b;
+    width: 50%;
+    padding: 5% 0;
+    perspective: 1500px;
+    -webkit-filter: drop-shadow(0 0 35px #ffffff6c);
+    filter: drop-shadow(0 0 15px  #00b7ff1f)drop-shadow(0 0 15px #cacaca23);
+}
+
+.destaque .card {
+    padding: 1em;
+    height: 180px;
+    width: 360px;
+    margin: auto;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+}.card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+}.card .glow {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: radial-gradient(circle at 50% -20%,
+     #ffffff34,
+    #0000000f);
+}
+
+#c1{
+    background-image: url(../img/opgranel.jpg);
+    transform: translate3d(0, 0, -80px) rotateY(15deg);
+}
+#c2{
+    background-image: url(../img/opgranel2.jpg);
+    margin-top: -7%;
+    margin-left: 50%;
+    transform: translate3d(0, 0, -80px) rotateY(-15deg);
+}
+
+.desc{
+    border: 1px solid #ffffff3b;
+    width: 50%;
+}
+.desc-title{
+    font-size: 2.3vw;
+    font-weight: 400;
+    margin-top: 15%;
+    font-family: Uber, Roboto, Helvetica Neue, sans-serif;
+}
+.desc-txt{
+    background-color: rgba(255, 0, 0, 0.418);
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    color: #ffffff;
+    font-size: 1vw;
+    font-weight: 300;
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    padding-top: 0.4%;
+}
+
 
 .tecnologias {
     display: flex;
@@ -281,7 +362,7 @@ body {
 }
 
 .contatos-form {
-    font-family: Uber,Roboto, Helvetica Neue, sans-serif;
+    font-family: Uber, Roboto, Helvetica Neue, sans-serif;
     font-weight: 100;
 }
 
@@ -302,7 +383,8 @@ body {
     margin-left: 5%;
 }
 
-.contatos-form input, textarea {
+.contatos-form input,
+textarea {
     margin-top: 5%;
     width: 100%;
     padding: 2.5% 5%;
@@ -314,9 +396,13 @@ body {
     font-weight: 0;
     font-size: 1.1vw;
     border-radius: 3px;
-}.contatos-form input:focus{
+}
+
+.contatos-form input:focus {
     border: 1.8px solid #BAD2E3;
-}.contatos-form textarea:focus{
+}
+
+.contatos-form textarea:focus {
     border: 1.8px solid #BAD2E3;
 }
 
@@ -334,7 +420,9 @@ body {
     border: 2px solid #BAD2E3;
     cursor: pointer;
     transition: 0.2s;
-}.contatos-form button:hover{
+}
+
+.contatos-form button:hover {
     background-color: #125068;
     border-color: #fff;
     color: #fff;
@@ -342,21 +430,21 @@ body {
 
 /*-----------carreira-----------*/
 
-.s-carreira{
+.s-carreira {
     margin-top: 3vw;
     font-family: Roboto, Helvetica Neue, sans-serif;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
-.carreira-divisao{
+.carreira-divisao {
     border-left: 3px solid #0A303F;
     border-radius: 10px;
     height: 23vw;
     margin: auto 0;
 }
 
-.carreira-titulo{
+.carreira-titulo {
     font-family: Uber, Roboto, Helvetica Neue, sans-serif;
     font-size: 1.7vw;
     margin: 0;
@@ -365,80 +453,81 @@ body {
     color: #fff;
 }
 
-.carreira-left{
+.carreira-left {
     width: 30%;
 }
 
-.formacao-item{
+.formacao-item {
     margin-top: 1.3vw;
     margin-left: 1vw;
     display: flex;
     color: #D9D9D9;
 }
 
-.formacao-item img{
+.formacao-item img {
     width: 4vw;
     margin: auto 0;
     border-radius: 3px;
     margin-right: 1vw;
 }
 
-.formacao-item-titulo{
-    font-family: Uber,Roboto, Helvetica Neue, sans-serif;
+.formacao-item-titulo {
+    font-family: Uber, Roboto, Helvetica Neue, sans-serif;
     font-size: 1.2vw;
     font-weight: 100;
 }
 
-.formacao-item-curso{
-    font-family: Inter,Roboto, Helvetica Neue, sans-serif;
+.formacao-item-curso {
+    font-family: Inter, Roboto, Helvetica Neue, sans-serif;
     font-size: 1vw;
     font-weight: 300;
     margin-top: 0.1vw;
 }
 
-.formacao-item-periodo{
-    font-family: Inter,Roboto, Helvetica Neue, sans-serif;
+.formacao-item-periodo {
+    font-family: Inter, Roboto, Helvetica Neue, sans-serif;
     font-size: 0.9vw;
     font-weight: 500;
     color: #4E98CD;
 }
 
-.cursos{
+.cursos {
     margin-top: 2vw;
 }
 
-.cursos-item{
+.cursos-item {
     margin-top: 1vw;
     margin-left: 1vw;
     color: #D9D9D9;
 }
 
-.cursos-item-titulo{
-    font-family: Uber,Roboto, Helvetica Neue, sans-serif;
+.cursos-item-titulo {
+    font-family: Uber, Roboto, Helvetica Neue, sans-serif;
     font-size: 1.2vw;
     font-weight: 100;
     color: #D9D9D9;
 }
 
-.cursos-item-curso{
-    font-family: Inter,Roboto, Helvetica Neue, sans-serif;
+.cursos-item-curso {
+    font-family: Inter, Roboto, Helvetica Neue, sans-serif;
     font-size: 1vw;
     font-weight: 300;
     margin-top: 0.1vw;
 }
 
-.cursos-item-periodo{
-    font-family: Inter,Roboto, Helvetica Neue, sans-serif;
+.cursos-item-periodo {
+    font-family: Inter, Roboto, Helvetica Neue, sans-serif;
     font-size: 0.9vw;
     font-weight: 500;
     margin-top: 0.1vw;
     color: #4E98CD;
 }
 
-.carreira-right{
+.carreira-right {
     width: 30%;
 }
-.experiencia-titulo{
+
+.experiencia-titulo {
     font-family: Uber, Roboto, Helvetica Neue, sans-serif;
     font-size: 1.7vw;
     margin: 0;
@@ -447,66 +536,71 @@ body {
     margin-bottom: -0.5vw;
     color: #fff;
 }
-.experiencia-item{
+
+.experiencia-item {
     margin-top: 1.3vw;
     margin-left: 5vw;
     color: #D9D9D9;
 }
 
-.experiencia-item-titulo{
+.experiencia-item-titulo {
     font-family: Roboto, Helvetica Neue, sans-serif;
     font-size: 1.2vw;
     font-weight: 500;
     color: #D9D9D9;
 }
 
-.experiencia-item-curso{
-    font-family: Inter,Roboto, Helvetica Neue, sans-serif;
+.experiencia-item-curso {
+    font-family: Inter, Roboto, Helvetica Neue, sans-serif;
     font-size: 01vw;
     font-weight: 300;
     margin-top: 0.3vw;
 }
 
-.experiencia-item-periodo{
-    font-family: Inter,Roboto, Helvetica Neue, sans-serif;
+.experiencia-item-periodo {
+    font-family: Inter, Roboto, Helvetica Neue, sans-serif;
     font-size: 0.9vw;
     font-weight: 500;
     margin-top: 0.1vw;
     color: #4E98CD;
 }
 
-.experiencia-item-descricao{
+.experiencia-item-descricao {
     font-size: 0.9vw;
     margin-top: 0.3vw;
 }
 
 /*-----------footer-----------*/
 
-.s-footer{
+.s-footer {
     text-align: center;
     width: 100%;
     margin-top: 3vw;
 }
 
-.footer-legenda{
+.footer-legenda {
     background-color: #03141B;
     font-size: 1vw;
     padding: 1vw;
     font-family: Inter, Roboto, Helvetica Neue, sans-serif;
     font-weight: 300;
 
-}.footer-legenda a {
+}
+
+.footer-legenda a {
     color: #4E98CD;
     text-decoration: none;
 }
 
-.footer-frase{
+.footer-frase {
     padding: 0.7vw;
     font-size: 1.1vw;
     background-color: #00223A;
     font-family: Dancing Script, Roboto, Helvetica Neue, sans-serif;
-}.footer-frase b{
+}
+
+.footer-frase b {
     font-size: 1.2vw;
-    font-family:Helvetica Neue, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
 
 }
