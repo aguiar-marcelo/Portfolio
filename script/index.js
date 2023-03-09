@@ -53,13 +53,14 @@ for (let i = 0; i <= 2; i++) {
       circle at
       ${center.x * 2 + bounds.width / 2}px
       ${center.y * 2 + bounds.height / 2}px,
-      #ffffff34,
+      #ffffff1c,
       #0000000f
     )`;
     }
 
     $cards[i].addEventListener("mouseenter", () => {
         bounds = $cards[i].getBoundingClientRect();
+        $cards[i].querySelector(".glow").style.display = "block";
         document.addEventListener("mousemove", rotateToMouse);
     });
 
@@ -67,6 +68,7 @@ for (let i = 0; i <= 2; i++) {
         document.removeEventListener("mousemove", rotateToMouse);
         $cards[i].style.transform = "";
         $cards[i].style.background = "";
+        $cards[i].querySelector(".glow").style.display = "none";
     });
 }
 

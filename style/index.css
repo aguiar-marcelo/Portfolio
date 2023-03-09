@@ -228,7 +228,6 @@ body {
     transition: 1.5s;
 }
 
-
 .destaque {
     display: flex;
     background-color: #072e3d;
@@ -236,9 +235,8 @@ body {
 }
 
 .card-box {
-    border: 1px solid #ffffff3b;
-    width: 50%;
-    padding: 5% 0;
+    width: 40%;
+    padding: 2% 0;
     perspective: 1500px;
     -webkit-filter: drop-shadow(0 0 35px #ffffff6c);
     filter: drop-shadow(0 0 15px  #00b7ff1f)drop-shadow(0 0 15px #cacaca23);
@@ -246,8 +244,8 @@ body {
 
 .destaque .card {
     padding: 1em;
-    height: 180px;
-    width: 360px;
+    height: 13vw;
+    width: 26vw;
     margin: auto;
     border-radius: 10px;
     background-size: cover;
@@ -267,7 +265,7 @@ body {
     left: 0;
     top: 0;
     background-image: radial-gradient(circle at 50% -20%,
-     #ffffff34,
+     #ffffff1c,
     #0000000f);
 }
 
@@ -277,31 +275,45 @@ body {
 }
 #c2{
     background-image: url(../img/opgranel2.jpg);
-    margin-top: -7%;
-    margin-left: 50%;
+    margin-top: -2%;
+    margin-left: 40%;
     transform: translate3d(0, 0, -80px) rotateY(-15deg);
 }
 
 .desc{
-    border: 1px solid #ffffff3b;
-    width: 50%;
+    width: 60%;
+}
+.desc div{
+    padding: 0 13%;
 }
 .desc-title{
+
     font-size: 2.3vw;
     font-weight: 400;
-    margin-top: 15%;
+    margin-top: 5%;
     font-family: Uber, Roboto, Helvetica Neue, sans-serif;
 }
+.desc-subtitle{
+    font-family: Inter, Roboto, Helvetica Neue, sans-serif;
+    font-size: 01.2vw;
+    font-weight: 500;
+    margin-top: 0.1vw;
+    color: #4E98CD;
+}
 .desc-txt{
-    background-color: rgba(255, 0, 0, 0.418);
-    width: 80%;
-    margin: auto;
-    height: 100%;
+    margin-top: 2%;
     color: #ffffff;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 300;
     font-family: Roboto, Helvetica Neue, sans-serif;
     padding-top: 0.4%;
+}
+.desc-tecs{
+    display: flex;
+    margin-top: 2vw;
+}.desc-tecs img{
+    height: 3vw;
+    margin: auto 2%;
 }
 
 
